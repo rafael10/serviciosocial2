@@ -1,0 +1,13 @@
+# BEGIN WordPress
+	<Files admin-ajax.php>
+	    Order allow,deny
+	    Allow from all
+	    Satisfy any
+	</Files>
+
+    AuthName "Directorio privado"
+	AuthType Basic
+	AuthUserFile /cdues/.htpasswd
+	require valid-user
+# END WordPress
+

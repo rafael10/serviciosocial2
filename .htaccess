@@ -1,3 +1,20 @@
 # BEGIN WordPress
+# ErrorDocument 401 default
 
+   <Files .htaccess>
+		Order allow,deny
+		Deny from all
+	</Files>
+	<files wp-login.php>
+	    AuthType Basic
+	    AuthName "HeyHey!"
+	    AuthUserFile "/protected/.htpasswd"
+	    require valid-user
+   </files>
+	
+	<FilesMatch "^(wp-config)\.php$">
+		Order Allow,Deny
+		Deny from all
+	</FilesMatch>
 # END WordPress
+

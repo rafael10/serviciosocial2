@@ -701,16 +701,16 @@ a:active {
 	position: relative;
 }
 
-/*jrlvm*/
+/*jrlvmen*/
 .main-navigation a {
-	font-size: 1.4rem;
 	/*font-size: 14px;*/
 	font-size: 18px;
+	font-size: 1.4rem;
 	color: #FFF;
     display: block;
     font-weight: normal;
     /*margin-right: 3em;*/
-    margin-right: 1.75em;
+    margin-right: 0.85em;
     text-decoration: none;
 	text-transform: uppercase;
 	word-spacing: 4px;
