@@ -13,12 +13,12 @@ get_header(); ?>
               <div class="flexslider"> <!--Rafael López:modificaciones para el slider-->
                 <ul class="slides">
                 <?php
-                query_posts(array('category_name' => 'featured', 'posts_per_page' => 3));
+                query_posts(array('category_name' => 'featured', 'posts_per_page' => 5));
                 if(have_posts()) :
                     while(have_posts()) : the_post();
                 ?>
                   <li>
-                    <?php the_post_thumbnail(); ?>
+                  	<a href="<?php the_permalink() ?>"><?php the_post_thumbnail();?></a>
                     <div class="flex-caption">
                     <div class="flex-caption-title">
                     <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>

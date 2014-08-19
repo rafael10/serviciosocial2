@@ -956,6 +956,7 @@ img[class*="wp-image-"],
 
 .wp-caption img {
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	max-width: 100%;  /*jrlv*/
 }
 .site-header img,
 .entry-content img,
@@ -1406,16 +1407,56 @@ MEDIA QUERIES
 }
 
 /* for 600px or less *//*Rafael López*/
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	.social-media, 
 	#branding img {
 	display: block;
 	}
+	.social-media {
+	list-style: none;
+	position: absolute;
+	top: 2px; 
+	right: 4px;	
+}
+.social-media li {
+	float: left;
+	padding: 0 5px;
+	position: relative;
+}
+.social-media a {
+	display: block;
+	height: 24px;
+	width: 24px;
+	margin-top: -10px;
+}
+
+.genericon, .genericon:visited {
+	color: #ffffff;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font-size: 24px;
+	font-size: 1.4rem !important;
+	line-height: 1;
+	font-family: 'Genericons';
+	text-decoration: inherit;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: middle;
+}
+.site-logo {
+	min-height: 70px;
+	padding-top: 18px;
+	padding-left: 8px;
+	/* float: left; */
+	background-color: #C00;
+	margin-top: -10px !important;
+	margin-bottom: -5px;
+}
 
 	.site-main {
     border: 0;
 }
-}
+} /*End Rafael López*/
 
 /* Bebas Font
 This license can be found at this permalink: http://www.fontsquirrel.com/license/Bebas
@@ -1638,6 +1679,7 @@ color: #ffffff; /*Rafael López*/
 
 
 /*Start Rafael López*/
+/*start position*/
 .title_position_table{
 	font-size:1.2rem;
 	font-size:14px !important;
@@ -1662,18 +1704,43 @@ color: #ffffff; /*Rafael López*/
    font-weight: normal;
    text-align: left;	
 }
+/*End position*/
 
 /* --- Smartphones (portrait and landscape) --- */
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
 
+.calendar_table{
+	width: 100%;
+
+}
+@media only screen and (max-width : 480px) {
+
+/*start calendar*/
+.calendar_table_conte{
+	max-width: 100%;   
+}
+.calendar_table_conte p {
+	margin-bottom: 1.5em;
+	font-family: Arial;
+	font-style: unset;
+	color: darkslategrey;
+}
+
+.calendar_table_conte table{
+	border: 0px solid #d9d9d9;
+	border-left-width: 0;
+	margin: 0 -0.083em 2.083em 0;
+	/*text-align: left;*/
+	width: 100%;
+}
+/*end calendar*/
+/*start position*/
 .title_position_table{
 	font-size:1.2rem;
 	font-size:12px !important;
 	font-family: 'bebasregular',sans-serif;
 	
 }
-
 #position_table{
 	border-collapse: separate !important;
     border-spacing: 0 !important;
@@ -1693,17 +1760,58 @@ color: #ffffff; /*Rafael López*/
    font-weight: normal;
    text-align: left;	
 }
-.entry-content tr th, .entry-content thead th, .comment-content tr th, .comment-content thead th {
-	padding: 0em 0em; 
+.entry-content tr th, .entry-content thead th, .comment-content tr th, .comment-content thead th{
+	padding: 0em 0em;
 }
+/*end position*/
+
+/*calendar jrlv*/
+
+.calendar_table{
+	max-width: 100%;
+	
+}
+.calendar_table thead tbody{
+	display: block;
+	 
+}
+.title_calendar_table{
+	font-size:12px !important;
+	font-family: 'bebasregular',sans-serif;
+	
+}
+thead{
+ position: relative; 	
+}
+tbody{
+ position: relative;
+}
+th{
+	position: relative;
+}
+tr{
+ position: relative;
+}
+td{
+ position: relative;
+ font-size:6px !important;
+ 
+}
+td:before{
+	position: relative;
+}
+.entry-content .calendar_table_conte tr th, entry-content .calendar_table_conte thead th, .calendar_table tr th, .calendar_table thead th{
+	padding: 0em 0em;
+}
+/*end calendar jrlv*/
 
 } 
 
-@media only screen and (min-width : 320px) and (max-width : 800px) {
+
+@media only screen and (max-width : 800px) {
 .site-logo {
  padding-left: 0px;
 }
-
 }
 /*End Rafael López*/
 

@@ -40,7 +40,7 @@ get_header();
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
-					<div class="entry-content">
+				<div class="entry-content">
 
 						<div class="entry-attachment">
 							<div class="attachment">

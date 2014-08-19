@@ -124,7 +124,8 @@ do_action( 'customize_controls_print_scripts' );
 				<div class="accordion-section-title" aria-label="<?php esc_attr_e( 'Theme Customizer Options' ); ?>" tabindex="0">
 					<span class="preview-notice"><?php
 						/* translators: %s is the theme name in the Customize/Live Preview pane */
-						echo sprintf( __( 'You are previewing %s' ), '<strong class="theme-name">' . $wp_customize->theme()->display('Name') . '</strong>' );
+						//echo sprintf( __( 'You are previewing %s' ), '<strong class="theme-name">' . $wp_customize->theme()->display('Name') . '</strong>' );
+						echo sprintf( __( 'You are previewing %s' ), '<strong class="theme-name">' . $wp_customize_name='Sitio Oficial CD UES' . '</strong>' );
 					?></span>
 				</div>
 				<?php if ( ! $cannot_expand ) : ?>

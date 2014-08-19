@@ -26,7 +26,7 @@ if ( !defined('ABSPATH') )
 	?>
 	<p id="footer-left" class="alignleft">
 		<?php
-		$text = sprintf( __( 'Thank you for creating with <a href="%s">WordPress</a>.' ), __( 'https://wordpress.org/' ) );
+		$text ="";
 		/**
 		 * Filter the "Thank you" text displayed in the admin footer.
 		 *
@@ -51,7 +51,7 @@ if ( !defined('ABSPATH') )
 		 *
 		 * @param string $content The content that will be printed.
 		 */
-		echo apply_filters( 'update_footer', '' );
+		//echo apply_filters( 'update_footer', '' ); //jr
 		?>
 	</p>
 	<div class="clear"></div>

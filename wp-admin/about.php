@@ -22,7 +22,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 <!--[if lt IE 9]><script>document.createElement('audio');document.createElement('video');</script><![endif]-->
 <div class="wrap about-wrap">
 
-<h1><?php printf( __( 'Welcome to WordPress&nbsp;%s' ), $display_version ); ?></h1>
+<h1><?php  printf( __( 'Welcome to WordPress&nbsp;%s' ), $display_version ); ?></h1>
 
 <div class="about-text"><?php printf( __( 'Thank you for updating! WordPress %s has lots of refinements we think you&#8217;ll love.' ), $display_version ); ?></div>
 

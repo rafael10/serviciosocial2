@@ -204,9 +204,9 @@ foreach ( $themes as $theme ) :
 	<div class="theme-author"><?php printf( __( 'By %s' ), $theme['author'] ); ?></div>
 
 	<?php if ( $theme['active'] ) { ?>
-		<h3 class="theme-name" id="<?php echo $aria_name; ?>"><span><?php _ex( 'Active:', 'theme' ); ?></span> <?php echo $theme['name']; ?></h3>
+		<h3 class="theme-name" id="<?php echo $aria_name; ?>"><span><?php _ex( 'Active:', 'theme' ); ?></span> <?php //echo $theme['name']; ?></h3>
 	<?php } else { ?>
-		<h3 class="theme-name" id="<?php echo $aria_name; ?>"><?php echo $theme['name']; ?></h3>
+		<h3 class="theme-name" id="<?php echo $aria_name; ?>"><?php //echo $theme['name']; ?></h3>
 	<?php } ?>
 
 	<div class="theme-actions">
@@ -277,11 +277,11 @@ if ( ! is_multisite() && current_user_can('edit_themes') && $broken_themes = wp_
 	<# } else { #>
 		<div class="theme-screenshot blank"></div>
 	<# } #>
-	<span class="more-details" id="{{ data.id }}-action"><?php _e( 'Theme Details' ); ?></span>
-	<div class="theme-author"><?php printf( __( 'By %s' ), '{{{ data.author }}}' ); ?></div>
+	<!--<span class="more-details" id="{{ data.id }}-action"><?php //_e( 'Theme Details' ); ?></span>-->
+	<!--<div class="theme-author"><?php //printf( __( 'By %s' ), '{{{ data.author }}}' ); ?></div>-->
 
 	<# if ( data.active ) { #>
-		<h3 class="theme-name" id="{{ data.id }}-name"><span><?php _ex( 'Active:', 'theme' ); ?></span> {{{ data.name }}}</h3>
+		<h3 class="theme-name" id="{{ data.id }}-name"><span><?php _ex( 'Active:', '' ); ?></span> {{{ data.name }}}</h3>
 	<# } else { #>
 		<h3 class="theme-name" id="{{ data.id }}-name">{{{ data.name }}}</h3>
 	<# } #>
@@ -324,18 +324,21 @@ if ( ! is_multisite() && current_user_can('edit_themes') && $broken_themes = wp_
 
 			<div class="theme-info">
 				<# if ( data.active ) { #>
-					<span class="current-label"><?php _e( 'Current Theme' ); ?></span>
+					<span class="current-label"><?php echo "CD UES";//_e( 'Current Theme' ); ?></span>
 				<# } #>
-				<h3 class="theme-name">{{{ data.name }}}<span class="theme-version"><?php printf( __( 'Version: %s' ), '{{{ data.version }}}' ); ?></span></h3>
-				<h4 class="theme-author"><?php printf( __( 'By %s' ), '{{{ data.authorAndUri }}}' ); ?></h4>
+				<!--<h3 class="theme-name">{{{ data.name }}}
+					<span class="theme-version"><?php  ?></span>
+					
+				</h3>-->
+				<h4 class="theme-author"><?php ?></h4>
 
 				<# if ( data.hasUpdate ) { #>
-				<div class="theme-update-message">
+				<!--<div class="theme-update-message">
 					<h4 class="theme-update"><?php _e( 'Update Available' ); ?></h4>
 					{{{ data.update }}}
-				</div>
+				</div>-->
 				<# } #>
-				<p class="theme-description">{{{ data.description }}}</p>
+				<!--<p class="theme-description">{{{ data.description }}}</p>-->
 
 				<# if ( data.parent ) { #>
 					<p class="parent-theme"><?php printf( __( 'This is a child theme of %s.' ), '<strong>{{{ data.parent }}}</strong>' ); ?></p>
