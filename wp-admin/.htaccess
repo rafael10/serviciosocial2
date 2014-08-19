@@ -5,9 +5,9 @@
 	    Satisfy any
 	</Files>
 
-    AuthName "Directorio privado"
-	AuthType Basic
-	AuthUserFile /cdues/.htpasswd
-	require valid-user
+    #AuthName "Directorio privado"
+	#AuthType Basic
+	#AuthUserFile /protected/.htpasswd
+	#require valid-user
 # END WordPress
 
