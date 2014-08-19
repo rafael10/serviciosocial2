@@ -35,7 +35,8 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
+	/*font-family: inherit;*/
+	font-family: inherit; /*jrlvm*/
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -454,12 +455,13 @@ a:active {
 #reply-title {
 	font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-
+/*jrlvm*/
 .site-title,
 .entry-title,
 .page-title,
 .widget-title {
-	font-family: 'bebasregular', sans-serif;
+	/*font-family: 'bebasregular', sans-serif;*/
+	font-family: 'TrSah Engebrechtre Expanded', sans-serif;
 	color: #333;
 	word-spacing: 4px;
 }
@@ -666,9 +668,10 @@ a:active {
 
 /* =Menu
 ----------------------------------------------- */
-
+/*jrlvm*/
 .main-navigation {
-	font-family: 'bebasregular', sans-serif;
+	/*font-family: 'bebasregular', sans-serif;*/
+	font-family: 'zrnic', sans-serif;
     clear: both;
     display: block;
     padding: 0.1em;
@@ -697,13 +700,17 @@ a:active {
 	margin: 0.5em 0; 
 	position: relative;
 }
+
+/*jrlvm*/
 .main-navigation a {
 	font-size: 1.4rem;
-	font-size: 14px;
+	/*font-size: 14px;*/
+	font-size: 18px;
 	color: #FFF;
     display: block;
     font-weight: normal;
-    margin-right: 3em;
+    /*margin-right: 3em;*/
+    margin-right: 1.75em;
     text-decoration: none;
 	text-transform: uppercase;
 	word-spacing: 4px;
@@ -758,9 +765,10 @@ a:active {
 	border-radius:0.4em;
 	border: 1px solid #666;
 }
-
+/*jrlv*/
 .main-small-navigation .menu {
-	font-family: 'bebasregular', sans-serif;
+	font-family: 'zrnic', sans-serif;/*jrlv*/
+	text-transform:uppercase;        /*jrlv*/
 	display: none;
 	background-color: #333;
 	border-bottom: 4px solid #CCC;
@@ -804,10 +812,14 @@ a:active {
 .sticky h1 a{
 	color: #333;
 }
+/*jrlvm*/
 .sticky h2{
-	font-family: 'bebasregular', serif;
-	font-size: 12px;
-	font-size: 1.2rem;
+	/*font-family: 'bebasregular', serif;*/
+	font-family: 'Zrnic', serif;	
+	/*font-size: 12px;
+	font-size: 1.2rem;*/
+	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 0;
 	border-bottom: 7px solid #333;
 	word-spacing: 4px;
@@ -850,11 +862,12 @@ a:active {
 	margin: 0 0 1.5em;
 	padding-bottom: 1.5em;
 }
+/*jrlvm*/
 .entry-title,
 .page-title {
 	font-size: 20px;
-    font-size: 2rem;
-	margin: 0 0 0.2em;
+    font-size: 2 rem;
+    margin: 0 0 0.2em;
 	border-bottom: 6px solid #EFEFEF;
 	color: #000;/*Rafael Lopez change color: #666;*/
 }
@@ -1815,4 +1828,3 @@ td:before{
 }
 /*End Rafael López*/
 
-	
