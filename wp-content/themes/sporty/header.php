@@ -17,7 +17,13 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+<!--<link rel="shortcut icon" type="x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />-->
+<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
+<!--[if !(IE 8) ]><!-->
+<!--<link rel="shortcut icon" href=href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/vnd.microsoft.icon" />-->
+<!--<![endif]-->
+
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
